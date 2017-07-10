@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finals Second Edition</title>
+
+  </head>
+<style>
+    #opacity
+    {opacity:1;
+      position:relative;
+    }
+    a:link 
+    {text-decoration:none;
+      opacity:1;
+      color:black;
+      position:relative;}
+    #link 
+    {text-decoration:none;
+      opacity:1;
+      position:relative;}
+    .button {
+      background-color: #4CAF50; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      position:relative;
+      margin:1px;
+    }
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #3a3b3d;
+      border-radius: 8px;
+    }
+
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+  </style>
+  <body background-color="white">
+      <div id="flip" style="color:white">Intelligence Electronics</div>
+    <div id="panel" style="color:white;">Intelligence Electronics</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+                        $(document).ready(function(){
+        $("button").click(function(){
+          $("div").animate({
+            height:'toggle'
+          });
+          });
+      });
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+    
+                        
+  </script>
+  </body>
+</html>
