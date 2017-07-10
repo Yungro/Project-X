@@ -6,7 +6,7 @@
     <title>Finals Second Edition</title>
 
   </head>
-<style>
+  <style>
     #opacity
     {opacity:1;
       position:relative;
@@ -33,7 +33,7 @@
       margin:1px;
     }
     #panel, #flip {
-      padding: 5px;
+      padding: 10px;
       text-align: center;
       background-color: #3a3b3d;
       border-radius: 8px;
@@ -45,25 +45,25 @@
     }
   </style>
   <body background-color="white">
-      <div id="flip" style="color:white">Intelligence Electronics</div>
+    <div id="flip" style="color:white">Intelligence Electronics</div>
     <div id="panel" style="color:white;">Intelligence Electronics</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script>
-                        $(document).ready(function(){
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
         $("button").click(function(){
           $("div").animate({
             height:'toggle'
           });
-          });
+        });
       });
-    $(document).ready(function(){
-      $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        });
       });
-    });
-    
-                        
-  </script>
+
+
+    </script>
   </body>
 </html>
